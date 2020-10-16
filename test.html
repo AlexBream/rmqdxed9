@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html>
 
@@ -11,12 +12,9 @@
                 console.log("ajax request to the resource which will require cors enabled");
                 $.ajax
                 ({
-                    contentType: 'application/json',
-                    data: '{"username":"mcodogno","password":"FIflexld123!"}',
                     dataType: "json",
-                    type: 'POST',
-                    url: "http://lces4disp.m2sc.local:8080/DispatcherSvil/Authenticate",
-                    success: function(data) 
+                    url: "https://api.github.com",
+                    success: function(data)
                     {
                         console.log("log response on success");
                         console.log(data);
@@ -27,7 +25,7 @@
     </head>
  
     <body onLoad='main();'>
-    <a href="test.html">test api github.com</a>
+
     </body>
 
 </html>
